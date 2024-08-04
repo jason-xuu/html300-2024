@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Allan:wght@400;700&family=Sora:wght@200&display=swap');
+
+// Variables for colors and dimensions
+$background-color: #fcfcfc;
+$text-color: #ffa000;
+$transition-duration: 0.4s; // Duration of transitions
+$btn-icon-width: 92px;
+$btn-icon-height: 45px;
+$transition-timing-function: cubic-bezier(0.5, 3, 0, 1);
+$border-color: #9198e5;
+$border-radius: 10px;
+$hover-scale: 1.1; // New variable for hover scale
+
+// Mixin to apply transitions
+@mixin transition($property, $duration, $timing-function: $transition-timing-function) {
+  transition: $property $duration $timing-function;
+}
+
+body {
+  background-image: url('https://i.imgur.com/cVBm1zV.jpg');
+  height: 100vh;
+  width: 100%;
+  font-family: Sora;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.subtitle {
+  font-size: 15px;
+}
+
+.btn {
+  text-align: center;
+  font-size: 60px;
+  text-transform: uppercase;
+  height: 90px;
+  vertical-align: middle;
+  line-height: normal;
+  width: 15rem;
+  border: 5px solid $border-color;
+  border-radius: $border-radius;
+  font-family: Allan;
+  margin-left: 20px;
+  margin-right: 20px;
+  @include transition(all, $transition-duration);
+  overflow: hidden; // Added to handle transform effects
+  position: relative; // Added to control the position of pseudo-elements
+}
+
+.btn::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle, rgba(255,255,255,0.3), rgba(0,0,0,0) 70%);
+  opacity: 0;
+  @include transition(opacity, $transition-duration);
+}
+
+.btn:hover::before {
+  opacity: 1;
+}
+
+.btn:active {
+  color: aliceblue;
+  transform: scale(0.99, 0.99);
+}
+
+.one {
+  background: linear-gradient(#e66465, #9198e5);
+  @include transition(background, $transition-duration);
+}
+
+.one:hover {
+  background: linear-gradient(#e66496, #91b8e5);
+  transform: scale($hover-scale) skewX(-10deg); // Added scaling and skew effect
+}
+
+.two {
+  background: linear-gradient(#64e68b, #e5b091);
+  @include transition(background, $transition-duration);
+}
+
+.two:hover {
+  background: linear-gradient(#64e6d0, #e5c391);
+  transform: rotateX(15deg) rotateY(15deg); // Slightly less intense rotation
+}
+
+.three {
+  background: linear-gradient(#b986d6, #88daa1);
+  border: 4px solid #e4a13d;
+  @include transition(background, $transition-duration), transition(border, $transition-duration);
+}
+
+.three:hover {
+  transform: scale(1.3); // Increased scaling for more impact
+}
+
+.container {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  text-align: center;
+}
+
+.title {
+  background-color: rgba(255, 255, 255, 0.6);
+  text-align: center;
+  font-family: Sora, sans-serif;
+  width: 50%;
+  font-size: 50px;
+  padding: 10px;
+  border-radius: 20px;
+}
+
+p {
+  font-size: 25px;
+  font-style: italic;
+  bottom: 0;
+  margin: 0;
+}
