@@ -1,6 +1,6 @@
-# Assignment 07 - Vue CLI
+# Assignment 04 - Vue CLI
 
-In the last assignment in lesson06, you created a responsive website with Bootstrap 4. In this assignment, you'll convert those pages and rebuild them with Vue CLI.
+In the last assignment in lesson03, you created a responsive website with Bootstrap 4. In this assignment, you'll convert those pages and rebuild them with Vue CLI.
 
 ### References
 - [Vue Docs](https://vuejs.org/v2/guide/)
@@ -13,12 +13,13 @@ In the last assignment in lesson06, you created a responsive website with Bootst
 
 ### To get started:
 - 	Fetch from the upstream master and merge with your local master as we start each lesson
--	In your forked repo, create a new branch off of master called `lesson-07` or similar
--   Navigate to the root folder of this assignment within terminal in your fork, `lesson07/assignment`
+-	In your forked repo, create a new branch off of master called `lesson04` or similar
+-   Navigate to the root folder of this assignment within terminal in your fork, `04-Intro_to_Vue/assignment`
 - 	Install the Vue CLI if you haven't already with `npm install -g @vue/cli`
 	- 	If installed correctly, running `vue --version` should return a number
 
 ###	Create your project using Vue CLI:
+#### Note: GitBash on PC's does not like the Vue CLI. You must use an alternative termianl. The terminal that comes with VSCode should work for you. In VS Code create a new terminal from the menu bar, then do the installation from that window. When you are done you can keep it open and run the rest of the commands if you wish, or just close it and use GitBash as before. 
 
 -	Follow the instructions in the Vue CLI documentation: https://cli.vuejs.org/guide/creating-a-project.html. Pass the "--no-git" flag to the create command, to prevent it from initializing the new project as a git repository (necessary because the html300 directory is a repository already, and having nested repositories leads to major problems with git).
 	- Choose "default" preset, rather than choosing features manually.
@@ -41,7 +42,7 @@ In the last assignment in lesson06, you created a responsive website with Bootst
 
 ### Build out the Project
 
-- 	Now, convert the 4 pages from lesson06 to components, then set paths in your router to those imported components. Meet the following requirements:
+- 	Now, convert the 4 pages from lesson03 to components, then set paths in your router to those imported components. Meet the following requirements:
 	-	All repeated content must be from variables in the `<script>` part of the `.vue` page, using `v-for` to iterate through and build the content
 		- 	This means the content should not be hardcoded, but set in the script and populated on the page with Vue methods
 	- 	You must use at least one `v-if` `v-else` statement to change content or UI.
