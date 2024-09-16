@@ -19,6 +19,7 @@ In the last assignment in lesson03, you created a responsive website with Bootst
 	- 	If installed correctly, running `vue --version` should return a number
 
 ###	Create your project using Vue CLI:
+#### Note: GitBash on PC's does not like the Vue CLI. You must use an alternative termianl. The terminal that comes with VSCode should work for you. In VS Code create a new terminal from the menu bar, then do the installation from that window. When you are done you can keep it open and run the rest of the commands if you wish, or just close it and use GitBash as before. 
 
 -	Follow the instructions in the Vue CLI documentation: https://cli.vuejs.org/guide/creating-a-project.html. Pass the "--no-git" flag to the create command, to prevent it from initializing the new project as a git repository (necessary because the html300 directory is a repository already, and having nested repositories leads to major problems with git).
 	- Choose "default" preset, rather than choosing features manually.

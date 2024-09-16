@@ -1,0 +1,23 @@
+{
+  "name": "lesson07",
+  "version": "1.0.0",
+  "description": "This repository contains the activities and assignments required to complete the final course of the Front End Certificate program. All assignment submissions and quizzes/discussions will be done through either Canvas or Open EdX.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jason-xuu/html300-2024.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jason-xuu/html300-2024/issues"
+  },
+  "homepage": "https://github.com/jason-xuu/html300-2024#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "bootstrap-vue": "^2.23.1"
+  }
+}
